@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    position: fixed;
+    /*border: 2px solid black;*/
+    top: 0;
+    left: 0;
+    z-index: 70;
+    display: flex;
+    flex-direction: row;
+    padding: 7px;
+    width: 100%;
+    padding: 5px 30px;
+    justify-content: space-between;
+}
+nav img{
+    width: 140px;
+    height: 35px;
+}
+nav button{
+    background-color: white;
+    border-radius: 15px;
+    width: 130px;
+    height: 35px;
+    color: rgb(238, 28, 150);
+    border: 2px solid  rgb(238, 28, 150);
+    justify-content: end;
+}
+#section-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding : 0 50px;
+    margin-top: 100px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 60px;
+}
+#section-1 h1{
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+#section-1 p{
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+
+}
+#section-1 p br{
+    align-items: center;
+    display: flex;
+}
+#section-1 button{
+    justify-content: center;
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: rgb(238, 28, 150);
+    color: white;
+    border: none;
+    padding: 4px 15px;
+    margin-top: 30px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.section-1-img{
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+#section-1 button:hover{
+    opacity: 0.6;
+    scale: 1.2;
+}
+
+/* #section-2{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} */
+
+.like{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    margin: 0 200px;
+
+}
+
+.communities{
+    display: flex;
+    flex-direction: column;
+    margin-right: 400px;
+}
+.message{
+    display: flex;
+    flex-direction: column;
+}
+
+.like .message img{
+    width: 30px;
+}
+.like .communities img{
+    width: 30px;
+}
+.like .communities h1{
+    font-size: 80px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.like .communities p{
+    color: grey;
+    font-size: 20px;
+}
+
+.like .message h1{
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.like .message p{
+    color: grey;
+    font-size: 20px;
+}
+
+#section-2{
+    display: flex;
+    flex-direction: row;
+    padding: 50px 40px 100px;
+}
+
+#section-2 img{
+    width: 60%;
+    height: 100%;
+    padding-left: 100px;
+    /* justify-content: end; */
+    float: right;
+}
+#section-2 .grow{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    
+}
+.grow h1{
+    font-size: 35px;
+    font-weight: 600;
+    padding-bottom: 35px;
+}
+.grow p{
+    font-size: 18px;
+    color: grey;
+
+}
+
+#section-3{
+    display: flex;
+    flex-direction: row;
+}
+.flow{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    padding: 0 40px;
+    margin-bottom: 80px;
+} 
+.flow img{
+    width: 50%;
+    height: 27%;
+    padding: 10px 10px 10px 30px;
+}
+.flow-com{
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    justify-content: center;
+}
+.flow-com h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.flow-com p{
+    font-size: 18px;
+    color: grey;
+}
+#section-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
+.user img{
+    width: 40%;
+    height: 27%;
+    padding: 10px 10px 10px 80px;
+    margin-left: 120px;
+}
+.user{
+    display: flex;
+    flex-direction: row;
+    margin-left: 70px;
+    /* justify-content: space-between; */
+}
+.user h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.user p{
+    font-size: 18px;
+   color: grey;
+}
+.user-com{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    justify-content: center;
+}
+#section-5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 70px 20px; */
+}
+.user-but{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    flex-direction: column;
+}
+.user-but h1{
+    font-weight: 600;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+#section-5 button{
+    justify-content: center;
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: rgb(238, 28, 150);
+    color: white;
+    border: none;
+    padding: 4px 15px;
+    margin-top: 30px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#section-5 button:hover{
+    opacity: 0.6;
+    scale: 1.2;
+}
+
+.footer-img{
+    display: flex;
+    flex-direction: column;
+    /* margin: 200px 0; */
+    position: cover;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* padding-top: 50px; */
+    background:  rgb(0, 37, 46) fixed;
+    /* background-color: rgb(0, 37, 46) fixed; */
+    /* width: 100%; */
+    height: 100%;
+}
+.foot-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 25px;
+    width: 100%;
+    color: white;
+}
+
+.foot-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    /* align-items: center; */
+    padding: 0 30px;
+}
+.foot-left img{
+    display: flex;
+    width: 200px;
+    height: 30px;
+    color: white;
+    padding-bottom: 20px;
+
+}
+.foot-left p{
+    color: beige;
+    padding-bottom: 20px;
+}
+.media{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 15px;
+}
+.media .phone{
+    flex-direction: row;
+    /* padding-bottom: 17px; */
+    color: white;
+}
+.phone img{
+    width: 30px;
+    height: 40px;
+    float: left;
+    align-items: start;
+    margin-right: 20px;
+}
+.phone p{
+    font-size: 18px;
+}
+.media .email{
+    flex-direction: row;
+    color: white;
+}
+.email img{
+    width: 30px;
+    height: 40px;
+    float: left;
+    align-items: start;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.media ul{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+.media ul i{
+    padding: 10px;
+    font-size: 25px;
+}
+.foot-right{
+    display: flex;
+    flex-direction: column;
+}
