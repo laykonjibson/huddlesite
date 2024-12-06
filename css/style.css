@@ -72,7 +72,8 @@ nav button{
     cursor: pointer;
 }
 
-.section-1-img{
+
+#section-1 .mid-img{
     width: 70%;
     align-items: center;
     justify-content: center;
@@ -112,8 +113,9 @@ nav button{
 .like .message img{
     width: 30px;
 }
-.like .communities img{
+.communities img{
     width: 30px;
+    
 }
 .like .communities h1{
     font-size: 80px;
@@ -136,34 +138,41 @@ nav button{
 }
 
 #section-2{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.grow{
     display: flex;
     flex-direction: row;
-    padding: 50px 40px 100px;
-}
-
-#section-2 img{
-    width: 60%;
-    height: 100%;
-    padding-left: 100px;
-    /* justify-content: end; */
-    float: right;
-}
-#section-2 .grow{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(246,251,255);
+    background-position: cover;
+    margin-top: -10px;
     
 }
-.grow h1{
+.grow .grow1{
+    display: flex;
+    flex-direction: column;
+    /* align-items: start; */
+    justify-content: center;
+    padding-left: 50px;
+    margin-right: 300px;
+    padding-right: 100px;
+}
+.grow1 h1{
     font-size: 35px;
     font-weight: 600;
     padding-bottom: 35px;
 }
-.grow p{
+.grow1 p{
     font-size: 18px;
     color: grey;
-
+}
+.grow .mid-img img{
+    width: 50%;
+    /* float: right; */
 }
 
 #section-3{
@@ -292,6 +301,7 @@ footer{
     padding: 15px 25px;
     width: 100%;
     color: white;
+    margin: 30px 30px 30px 70px;
 }
 
 .foot-left{
@@ -301,6 +311,7 @@ footer{
     width: 50%;
     /* align-items: center; */
     padding: 0 30px;
+    margin-top: 30px;
 }
 .foot-left img{
     display: flex;
@@ -313,6 +324,9 @@ footer{
 .foot-left p{
     color: beige;
     padding-bottom: 20px;
+}
+.foot-left p{
+    font-size: 20px;
 }
 .media{
     display: flex;
@@ -333,7 +347,7 @@ footer{
     margin-right: 20px;
 }
 .phone p{
-    font-size: 18px;
+    font-size: 20px;
 }
 .media .email{
     flex-direction: row;
@@ -347,16 +361,162 @@ footer{
     margin-bottom: 20px;
     margin-right: 20px;
 }
+.email p{
+    font-size: 20px;
+}
 .media ul{
     display: flex;
     flex-direction: row;
     margin: 10px;
 }
 .media ul i{
-    padding: 10px;
+    /* padding: 10px; */
     font-size: 25px;
+    margin-right: 25px;
 }
 .foot-right{
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
+
 }
+.foot-right h1{
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+.foot-right p{
+    font-size: 19px;
+    padding-bottom: 20px;
+}
+.in-but{
+    display: flex;
+    margin: 0 10px;
+}
+.in-but input{
+    width: 150px;
+    height: 30px;
+    margin-right: 15px;
+}
+.in-but button{
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    background-color:  rgb(238, 28, 150);
+    color: white;
+    border: none;
+}
+
+/* responsiveness for desktop */
+@media screen and  (max-width: 987px){
+
+}
+
+/* tablet */
+@media screen and  (max-width: 900px){
+    .section-1 img{
+        width: 400px;
+    }
+    .grow{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%; 
+    }
+
+    .grow .grow1{
+        justify-content: right;
+        align-items: end;
+        margin-right: 100px;
+        
+
+    }
+    #section-2 .mid-img img{
+        width: 100%;
+        padding-right: 50px;
+    }
+    .grow1 h1{
+        font-size: 25px;
+        /* padding-left: -10px; */
+    }
+    .grow1 p{
+        text-align: start;
+    }
+    .flow-com h1{
+        font-size: 30px;
+    }
+    .user{
+        margin-left: 50px;
+    }
+    .user img{
+        width: 50%;
+        height: 27%;
+        padding: 10px 10px 10px 60px;
+        margin-left: 80px;
+    }
+    .user-com h1{
+        font-size: 30px;
+    }
+    footer{
+        margin-top: -5px;
+    }
+    .foot-cont{
+        margin-left: 30px;
+    }
+    .foot-left p{
+        font-size: 15px;
+    }
+    .foot-right h1{
+        font-size: 25px;
+    }
+    .foot-right p{
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and  (max-width: 900px){
+    nav img{
+        width: 120px;
+    }
+    nav button{
+        width: 80px;
+    }
+    #section-1{
+        width: 100%;
+    }
+    #section-1 h1{
+        font-size: 24px;
+    }
+    #section-1 p{
+        font-size: 18px;
+    }
+    #section-1 button{
+        width: 150px;
+        margin-top: 15px;
+        font-size: 12px;
+    }
+    #section-1 .mid-img{
+        width: 90%;
+        padding: 40px 0 0 0;
+        height: 70vh;
+    }
+    .like{
+        margin: 0;
+        justify-content: right;
+        align-items: left;
+        display: flex;
+        width: 100%;
+    }
+    .communities{
+        margin-right: 30px;
+    }
+    .communities h1{
+        /* margin-left: -160px; */
+        font-size: 17px;
+    }
+    .like .communities p{
+        font-size: 9px;
+        /* margin-left: -90px; */
+    }
+    #section-3
+}    
